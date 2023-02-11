@@ -1,0 +1,48 @@
+.container {
+  background-color: #FFF;
+  border-radius: 6px;
+}
+
+.container::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.container[open] {
+  animation: fade-in var(--transition-duration);
+}
+
+.container > section {
+  padding: 24px 36px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 24px;
+}
+
+.container > section > header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container > section > header h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.container > section > header button {
+  font-size: 2rem;
+  color: #C0C0C0;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

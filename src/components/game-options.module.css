@@ -1,0 +1,50 @@
+.container {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 16px solid transparent;
+  border-radius: 100%;
+  padding: 30px;
+
+  width: 150px;
+  height: 150px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: var(--transition-duration) box-shadow;
+}
+
+.container > svg {
+  max-width: 100%;
+  max-height: 100%;
+
+  color: #3c4262;
+}
+
+.paper, .scissors, .rock {
+  background-color: #EFEFEF;
+}
+
+.paper {
+  border-color: #4b67f7;
+}
+
+.paper:hover {
+  box-shadow: 0 6px 0 rgb(0 0 0 / 40%) inset, 0 6px 0 #4b67f799;
+}
+
+.scissors {
+  border-color: #eaa00d;
+}
+
+.scissors:hover {
+  box-shadow: 0 6px 0 rgb(0 0 0 / 40%) inset, 0 6px 0 #eaa00d99;
+}
+
+.rock {
+  border-color: #db2e4c;
+}
+
+.rock:hover {
+  box-shadow: 0 6px 0 rgb(0 0 0 / 40%) inset, 0 6px 0 #db2e4c99;
+}

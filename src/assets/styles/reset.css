@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: transparent;
+  transition: 300ms text-decoration-color;
+}
+
+a:hover {
+  text-decoration-color: inherit;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font: inherit;
+  padding: 0;
+}
+
+dialog {
+  background: none;
+  border: none;
+  padding: 0;
+}

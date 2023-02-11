@@ -1,0 +1,29 @@
+:root {
+  --font-family: 'Roboto', sans-serif;
+  --background-color: #161f40;
+  --transition-duration: 300ms;
+  --border-radius: 6px;
+  --text-color: #636363;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+  color: var(--text-color);
+}
+
+#root {
+  min-height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 30px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+button {
+  cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 120px;
+}
+
+.container > div {
+  text-align: center;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.container > div > h3 {
+  color: #FFF;
+  text-transform: uppercase;
+}
