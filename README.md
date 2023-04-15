@@ -1,10 +1,12 @@
-# Rock, Paper, Scissors game
+# Rock, paper and scissors game
 
 Built with:
 
 - [Vite](https://vitejs.dev)
 - [React](https://react.dev)
 - [TypeScript](https://www.typescriptlang.org)
+
+See [demo](https://rafaelsilva1-rock-paper-scissors.vercel.app)
 
 ## Requirements
 
@@ -25,3 +27,17 @@ Built with:
 
 - Run `npm run build`
 - Files will be at `/dist` folder to upload to server
+
+## Results
+
+### What I learnt?
+
+...
+
+### What I will try to do henceforth?
+
+...
+
+### What I will consider not doing anymore?
+
+...
