@@ -3,4 +3,5 @@
 
 namespace App {
   type GameOption = 'rock' | 'paper' | 'scissors'
+  type GameStatus = 'select' | 'won' | 'lose' | 'tie'
 }

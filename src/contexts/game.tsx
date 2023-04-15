@@ -5,7 +5,7 @@ import { useScoreContext } from './score'
 type GameContextData = {
   gameMyOption: App.GameOption | null
   gameHouseOption: App.GameOption | null
-  gameStatus: 'select' | 'won' | 'lose' | 'tie'
+  gameStatus: App.GameStatus
   gameSelectOption: (v: App.GameOption) => void
   gameReset: () => void
 }
@@ -15,7 +15,7 @@ const GameContext = createContext<GameContextData>({} as GameContextData)
 const GameProvider: FC<GameProviderProps> = ({ children }) => {
   const [gameMyOption, setGameMyOption] = useState<App.GameOption | null>(null)
   const [gameHouseOption, setGameHouseOption] = useState<App.GameOption | null>(null)
-  const [gameStatus, setGameStatus] = useState('select')
+  const [gameStatus, setGameStatus] = useState<App.GameStatus>('select')
   const { incrementScore, decrementScore } = useScoreContext()
 
   function gameSelectOption (myOption: App.GameOption) {
