@@ -1,5 +1,5 @@
 import type { FC } from 'react'
-import { useGameContext } from '../contexts/game'
+import { useGameContext } from '../hooks'
 import { GameOption } from './game-option'
 import styles from './step-selection.module.css'
 import BGTriangle from '../assets/images/bg-triangle.svg'

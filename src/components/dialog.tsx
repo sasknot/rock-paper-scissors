@@ -1,5 +1,5 @@
 import type { FC, PropsWithChildren } from 'react'
-import { useState, useRef, useEffect } from 'react'
+import { useRef, useEffect } from 'react'
 import styles from './dialog.module.css'
 
 type DialogProps = PropsWithChildren<{

@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { useScoreContext } from '../contexts/score'
+import { useScoreContext } from '../hooks'
 import styles from './header.module.css'
 
 export const Header: FC = () => {

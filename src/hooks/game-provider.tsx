@@ -1,18 +1,9 @@
 import type { FC, PropsWithChildren } from 'react'
-import { createContext, useContext, useState } from 'react'
-import { useScoreContext } from './score'
+import { useState } from 'react'
+import { GameContext } from './use-game-context'
+import { useScoreContext } from '.'
 
-type GameContextData = {
-  gameMyOption: App.GameOption | null
-  gameHouseOption: App.GameOption | null
-  gameStatus: App.GameStatus
-  gameSelectOption: (v: App.GameOption) => void
-  gameReset: () => void
-}
-type GameProviderProps = PropsWithChildren<{}>
-
-const GameContext = createContext<GameContextData>({} as GameContextData)
-const GameProvider: FC<GameProviderProps> = ({ children }) => {
+const GameProvider: FC<PropsWithChildren> = ({ children }) => {
   const [gameMyOption, setGameMyOption] = useState<App.GameOption | null>(null)
   const [gameHouseOption, setGameHouseOption] = useState<App.GameOption | null>(null)
   const [gameStatus, setGameStatus] = useState<App.GameStatus>('select')
@@ -66,8 +57,4 @@ const GameProvider: FC<GameProviderProps> = ({ children }) => {
   )
 }
 
-function useGameContext () {
-  return useContext(GameContext)
-}
-
-export { GameProvider, useGameContext }
+export { GameProvider }

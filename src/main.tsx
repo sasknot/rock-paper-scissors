@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { ScoreProvider } from './contexts/score'
-import { GameProvider } from './contexts/game'
+import { ScoreProvider } from './hooks/score-provider'
+import { GameProvider } from './hooks/game-provider'
 import App from './app'
 import './assets/styles/reset.css'
 

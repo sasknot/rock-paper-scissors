@@ -1,11 +1,11 @@
-import { useGameContext } from './contexts/game'
+import { useGameContext } from './hooks'
 import { Header } from './components/header'
 import { StepSelection } from './components/step-selection'
 import { StepResult } from './components/step-result'
 import { Footer } from './components/footer'
 import './assets/styles/app.css'
 
-export default function () {
+export default function App () {
   const { gameMyOption } = useGameContext()
 
   return (
