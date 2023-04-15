@@ -18,7 +18,7 @@ export const StepResult: FC = () => {
 
       {gameStatus !== 'select' && (
         <div>
-          <h3>{gameStatus === 'tie' ? 'It\' a tie' : `You ${gameStatus}`}</h3>
+          <h3>{gameStatus === 'tie' ? 'It\'s a tie' : `You ${gameStatus}`}</h3>
           <Button onClick={gameReset}>Play again</Button>
         </div>
       )}

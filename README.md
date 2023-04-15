@@ -1,12 +1,8 @@
 # Rock, paper and scissors game
 
-Built with:
+Built with [Vite](https://vitejs.dev) + [React](https://react.dev) + [TypeScript](https://www.typescriptlang.org)
 
-- [Vite](https://vitejs.dev)
-- [React](https://react.dev)
-- [TypeScript](https://www.typescriptlang.org)
-
-See [demo](https://rafaelsilva1-rock-paper-scissors.vercel.app)
+See [demo](https://rock-paper-scissors-rafaelfsilva1.vercel.app)
 
 ## Requirements
 
@@ -16,7 +12,7 @@ See [demo](https://rafaelsilva1-rock-paper-scissors.vercel.app)
 ## Initial setup
 
 - Install required node packages with `npm ci`
-- **Note:** variables that will be used in the app must have the prefix `VITE_` to work.
+<!-- - **Note:** variables that will be used in the app must have the prefix `VITE_` to work. -->
 
 ## Development
 
